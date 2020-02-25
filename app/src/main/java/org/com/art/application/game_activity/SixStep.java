@@ -1,4 +1,4 @@
-package org.com.art.application.gameActivity;
+package org.com.art.application.game_activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -610,25 +610,5 @@ public class SixStep  extends AppCompatActivity {
         image204=mMainArray[number][9];
         image205=mMainArray[number][10];
         image206=mMainArray[number][11];
-
-
-
-//        image101=mMainArray[0][0];
-//        image102=R.drawable.ic_image102;
-//        image103=R.drawable.ic_image103;
-//        image104=R.drawable.ic_image104;
-//        image105=R.drawable.ic_image105;
-//        image106=R.drawable.ic_image106;
-//
-//        image201=R.drawable.ic_image201;
-//        image202=R.drawable.ic_image202;
-//
-//        image203=R.drawable.ic_image203;
-//
-//        image204=R.drawable.ic_image204;
-//        image205=R.drawable.ic_image205;
-//        image206=R.drawable.ic_image206;
     }
-
-
 }

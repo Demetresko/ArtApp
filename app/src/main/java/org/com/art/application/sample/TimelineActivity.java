@@ -19,7 +19,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.wangjie.wheelview.R;
 import org.com.art.application.WheelView;
-import org.com.art.application.gameActivity.SixStep;
+import org.com.art.application.game_activity.SixStep;
 
 import java.util.Arrays;
 

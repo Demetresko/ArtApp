@@ -1,4 +1,4 @@
-package org.com.art.application.Direction;
+package org.com.art.application.direction;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

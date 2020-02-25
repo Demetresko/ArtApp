@@ -1,4 +1,4 @@
-package org.com.art.application.Direction;
+package org.com.art.application.direction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 
+import org.com.art.application.artist_activity.ArtistActivity;
 import org.wangjie.wheelview.R;
-import org.com.art.application.artistactivity.ArtistActivity;
 
 /**
  * Created by Wonka on 01.08.2017.

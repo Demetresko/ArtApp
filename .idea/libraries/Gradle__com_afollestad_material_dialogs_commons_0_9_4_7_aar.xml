@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.afollestad.material-dialogs:commons:0.9.4.7@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/394ecf9335f0b453117579539dc9c76a/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/7d28771ab0163cfe6df301e45f293e3b/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/394ecf9335f0b453117579539dc9c76a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/394ecf9335f0b453117579539dc9c76a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/7d28771ab0163cfe6df301e45f293e3b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/commons-0.9.4.7.aar/7d28771ab0163cfe6df301e45f293e3b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

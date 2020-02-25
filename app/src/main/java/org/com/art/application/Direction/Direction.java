@@ -1,4 +1,4 @@
-package org.com.art.application.Direction;
+package org.com.art.application.direction;
 
 /**
  * Created by Wonka on 15.07.2017.

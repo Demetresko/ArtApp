@@ -1,4 +1,4 @@
-package org.com.art.application.Direction;
+package org.com.art.application.direction;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -32,8 +32,8 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.WheelViewAlternative;
+import org.com.art.application.game_activity.SixStep;
 import org.wangjie.wheelview.R;
-import org.com.art.application.gameActivity.SixStep;
 
 import java.util.ArrayList;
 

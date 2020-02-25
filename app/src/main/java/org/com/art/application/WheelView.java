@@ -24,7 +24,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.com.art.application.Direction.ActivityMainDirection;
+import org.com.art.application.direction.ActivityMainDirection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,10 +37,7 @@ import java.util.List;
 public class WheelView extends ScrollView {
     public int i;
 
-
     public static final String TAG = WheelView.class.getSimpleName();
-
-
 
     public static class OnWheelViewListener {
         public void onSelected(int selectedIndex, String item) {
@@ -83,7 +80,7 @@ public class WheelView extends ScrollView {
         items.addAll(list);
 
         // 前面和后面补全 передняя и задняя комплементаё
-        for (int i = 0; i < offset-1; i++) {
+        for (int i = 0; i < offset - 1; i++) {
             items.add(0, "");
             items.add("");
         }
@@ -128,7 +125,6 @@ public class WheelView extends ScrollView {
         scrollerTask = new Runnable() {
 
             public void run() {
-
                 int newY = getScrollY();
                 if (initialY - newY == 0) { // stopped
                     final int remainder = initialY % itemHeight;
@@ -137,7 +133,6 @@ public class WheelView extends ScrollView {
 //                    Log.d(TAG, "remainder: " + remainder + ", divided: " + divided);
                     if (remainder == 0) {
                         selectedIndex = divided + offset; //Выбранный индекс
-
                         onSeletedCallBack();
                     } else {
                         if (remainder > itemHeight / 2) {
@@ -159,8 +154,6 @@ public class WheelView extends ScrollView {
                                 }
                             });
                         }
-
-
                     }
 
 
@@ -186,8 +179,6 @@ public class WheelView extends ScrollView {
     }
 
 
-
-
     private void initData() {
         displayItemCount = offset * 2 + 1;
 
@@ -200,26 +191,19 @@ public class WheelView extends ScrollView {
     }
 
 
-
-
-
     int itemHeight = 0;
-
-
-
 
 
     private TextView createView(String item) { //Textview создаю вьюшку в списке
         TextView tv = new TextView(context);
         views.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-        if (item.length()!=0){
+        if (item.length() != 0) {
 
-            SpannableString ss1=  new SpannableString(item);
-            ss1.setSpan(new RelativeSizeSpan(0.6f), 0,5, 0); // set size
+            SpannableString ss1 = new SpannableString(item);
+            ss1.setSpan(new RelativeSizeSpan(0.6f), 0, 5, 0); // set size
             //ss1.setSpan(new ForegroundColorSpan(Color.BLACK), 0, 5, 0);// set color
             views.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-
 
 
             tv.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -264,7 +248,6 @@ public class WheelView extends ScrollView {
 //            this.setLayoutParams(new RelativeLayout.LayoutParams(lp.width, itemHeight * displayItemCount));
 
 
-
         }
         return tv;
     }
@@ -304,7 +287,6 @@ public class WheelView extends ScrollView {
 
 
     }
-
 
 
     private void refreshItemView(int y) {
@@ -349,11 +331,8 @@ public class WheelView extends ScrollView {
         int childSize = views.getChildCount();
 
 
-
-
-        for ( i = 0; i < childSize; i++) {
+        for (i = 0; i < childSize; i++) {
             TextView itemView = (TextView) views.getChildAt(i); //Надпись
-
 
 
             itemView.setOnClickListener(new OnClickListener() {
@@ -367,56 +346,45 @@ public class WheelView extends ScrollView {
 
                     if (s.equals("1850   Реализм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","0");
-                    }
-
-                    else if (s.equals("1860   Импрессионизм")) {
+                        intent.putExtra("Number_in_list", "0");
+                    } else if (s.equals("1860   Импрессионизм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","1");
+                        intent.putExtra("Number_in_list", "1");
 
 
-
-                    } else if (s.equals("1880   Пост"+"\n"+"        -импрессионизм")) {
+                    } else if (s.equals("1880   Пост" + "\n" + "        -импрессионизм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","2");
-
+                        intent.putExtra("Number_in_list", "2");
 
 
                     } else if (s.equals("1910   Кубизм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","3");
+                        intent.putExtra("Number_in_list", "3");
 
 
-
-                    } else if  (s.equals("1915   Экспрессионизм")) {
+                    } else if (s.equals("1915   Экспрессионизм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","4");
+                        intent.putExtra("Number_in_list", "4");
 
 
-
-
-                    } else if  (s.equals("1920   Сюрреализм")) {
+                    } else if (s.equals("1920   Сюрреализм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","5");
+                        intent.putExtra("Number_in_list", "5");
 
 
-                    }  else if  (s.equals("1930   Абстракционизм")) {
+                    } else if (s.equals("1930   Абстракционизм")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","6");
+                        intent.putExtra("Number_in_list", "6");
 
 
-
-                    }  else if  (s.equals("1950   Абстрактная"+"\n"+"            Живопись")) {
+                    } else if (s.equals("1950   Абстрактная" + "\n" + "            Живопись")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","7");
+                        intent.putExtra("Number_in_list", "7");
 
 
-
-
-                    } else if (s.equals("1960   Поп арт"))
-                    {
+                    } else if (s.equals("1960   Поп арт")) {
                         intent = new Intent(context, ActivityMainDirection.class);
-                        intent.putExtra("Number_in_list","8");
+                        intent.putExtra("Number_in_list", "8");
                     }
 
                     context.startActivity(intent);
@@ -424,11 +392,9 @@ public class WheelView extends ScrollView {
             });
 
 
-
             if (null == itemView) {
                 return;
             }
-
 
 
             if (position == i) {
@@ -441,11 +407,7 @@ public class WheelView extends ScrollView {
         }
 
 
-
-
     }
-
-
 
 
     /**
@@ -513,11 +475,6 @@ public class WheelView extends ScrollView {
     }
 
 
-
-
-
-
-
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -538,7 +495,7 @@ public class WheelView extends ScrollView {
 
     public void setSeletion(int position) {
         final int p = position;
-        selectedIndex = p + offset+2; // Вот тут я выбранный индекс увеличил на 2 так как после SetOffset меняется SelectedIndex
+        selectedIndex = p + offset + 2; // Вот тут я выбранный индекс увеличил на 2 так как после SetOffset меняется SelectedIndex
         this.post(new Runnable() {
             @Override
             public void run() {
@@ -574,10 +531,6 @@ public class WheelView extends ScrollView {
     }
 
 
-
-
-
-
     private OnWheelViewListener onWheelViewListener;
 
     public OnWheelViewListener getOnWheelViewListener() {
@@ -601,11 +554,6 @@ public class WheelView extends ScrollView {
     }
 
 }
-
-
-
-
-
 
 
 //        for ( i = 0; i < childSize; i++) {
