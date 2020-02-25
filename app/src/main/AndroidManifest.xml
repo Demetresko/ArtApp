@@ -58,7 +58,7 @@
         <activity
             android:screenOrientation="portrait"
 
-            android:name="org.com.art.application.Direction.ActivityMainDirection"
+            android:name="org.com.art.application.direction.ActivityMainDirection"
             android:label="@string/title_activity_direction"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -69,14 +69,14 @@
         <activity
             android:screenOrientation="portrait"
 
-            android:name="org.com.art.application.artistactivity.ArtistActivity"
+            android:name="org.com.art.application.artist_activity.ArtistActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity
             android:screenOrientation="portrait"
 
-            android:name="org.com.art.application.gameActivity.SixStep"
+            android:name="org.com.art.application.game_activity.SixStep"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
