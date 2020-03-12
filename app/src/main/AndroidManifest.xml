@@ -5,12 +5,6 @@
           package="org.wangjie.wheelview"
    >
 
-    <!--
-    <uses-sdk tools:overrideLibrary="android.support.constraint"/>
-    <uses-sdk tools:overrideLibrary="android.support.v7.recyclerview"/>
-
-
-    -->
     <uses-permission android:name="com.sec.android.provider.badge.permission.READ" tools:node="remove"/>
     <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" tools:node="remove"/>
     <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" tools:node="remove"/>
@@ -80,14 +74,11 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name="org.WheelViewAlternative"
+        <activity android:name="org.com.art.application.WheelViewAlternative"
                   android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity android:name="org.com.art.application.sample.GalleryActivity"
                   android:theme="@style/AppTheme.NoActionBar"/>
-
-
-
 
     </application>
 

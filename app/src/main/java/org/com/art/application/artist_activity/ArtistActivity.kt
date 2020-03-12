@@ -28,8 +28,8 @@ import com.mikepenz.materialdrawer.DrawerBuilder
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
+import org.com.art.application.WheelViewAlternative
 
-import org.WheelViewAlternative
 import org.wangjie.wheelview.R
 import org.com.art.application.game_activity.SixStep
 
@@ -115,7 +115,6 @@ class ArtistActivity : AppCompatActivity() {
         mTitleDate.visibility = View.INVISIBLE
         mTitleAbout.visibility = View.INVISIBLE
 
-
         layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
@@ -191,4 +190,3 @@ class ArtistActivity : AppCompatActivity() {
         })
     }
 }
-

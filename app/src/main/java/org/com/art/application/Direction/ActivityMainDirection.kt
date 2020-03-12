@@ -23,7 +23,7 @@ import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.DrawerBuilder
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem
-import org.WheelViewAlternative
+import org.com.art.application.WheelViewAlternative
 import org.com.art.application.game_activity.SixStep
 import org.wangjie.wheelview.R
 import java.util.*

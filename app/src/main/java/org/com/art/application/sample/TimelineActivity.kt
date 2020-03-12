@@ -46,7 +46,7 @@ class TimelineActivity : AppCompatActivity(), View.OnClickListener {
         //  result.updateItem(item2);
         val wva = findViewById<View>(R.id.main_wv) as WheelView
         wva.setSeletion(4)
-        wva.offset = 3 //3
+        wva.offset = 3
         wva.setItems(Arrays.asList(*PLANETS))
         wva.onWheelViewListener = object : OnWheelViewListener() {
             override fun onSelected(selectedIndex: Int, item: String?) {
